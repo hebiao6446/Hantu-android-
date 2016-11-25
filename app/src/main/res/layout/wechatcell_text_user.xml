@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    >
+    
+    <RelativeLayout
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:id="@+id/cell_user_text_time_relativelayout"
+        >
+        <TextView
+            android:id="@+id/cell_user_text_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="11:11"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#fff"
+            android:background="@drawable/wechatcell_timeback"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/cell_user_text_logo_imageview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/cnm"
+            />
+
+        <RelativeLayout
+            android:id="@+id/cell_user_text_bgview_relativelayout"
+            android:layout_toLeftOf="@id/cell_user_text_logo_imageview"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:background="@drawable/wechatbac2"
+            android:layout_marginLeft="60dp"
+            >
+            <TextView
+                android:id="@+id/cell_user_text_context_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:text="00000000099999999999990000ewfaefawfawfawfawfawfawfawfawefawgwaegawgwafawoefoawfuaowfowafoawjfljsfjowajfoawiefoawfoawjfoawofioawjfoawjfiawifjaojwifawgawgawfwaohohohohohowaefioeaweofahwoi000099988888888888888888888888888888888888888889999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999900000000099999999999999999999999999999999999999999999990000000000000000000000000000000000000000000000000"
+                android:layout_centerInParent="true"
+                android:textColor="#444444"
+                />
+
+        </RelativeLayout>
+
+    <Button
+
+
+        android:id="@+id/cell_user_text_resend_button"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@mipmap/wechat_resendbut5"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-22dp"
+        android:layout_alignLeft="@id/cell_user_text_bgview_relativelayout"
+        android:visibility="gone"
+        />
+
+
+        <ProgressBar
+            android:id="@+id/cell_user_text_loading_progressbar"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@id/cell_user_text_bgview_relativelayout"
+            android:layout_marginLeft="-22dp"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:id="@+id/cell_user_text_readstatus_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未读"
+            android:textSize="12sp"
+            android:textColor="#c00000"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@id/cell_user_text_bgview_relativelayout"
+            android:layout_marginLeft="-32dp"
+            android:visibility="gone"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

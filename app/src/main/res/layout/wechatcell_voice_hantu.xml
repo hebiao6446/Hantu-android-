@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    >
+
+
+    <RelativeLayout
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:id="@+id/cell_hantu_voice_time_relativelayout"
+        >
+        <TextView
+            android:id="@+id/cell_hantu_voice_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="11:11"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#fff"
+            android:background="@drawable/wechatcell_timeback"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/cell_hantu_voice_logo_imageview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/cnm"
+            />
+
+        <RelativeLayout
+            android:id="@+id/cell_hantu_voice_level_relativelayout"
+            android:layout_toRightOf="@id/cell_hantu_voice_logo_imageview"
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/wechatbac1"
+            android:layout_marginRight="60dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/cell_hantu_voice_aniotion_imageview"
+                android:layout_width="14dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/wechatvoice3"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/cell_hantu_voice_duringtime_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="9 ''"
+            android:textSize="12sp"
+            android:layout_marginRight="-25dp"
+            android:layout_alignRight="@id/cell_hantu_voice_level_relativelayout"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

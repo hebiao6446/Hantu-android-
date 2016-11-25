@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    >
+
+    <RelativeLayout
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:id="@+id/cell_hantu_image_time_relativelayout"
+        >
+        <TextView
+            android:id="@+id/cell_hantu_image_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="11:11"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#fff"
+            android:background="@drawable/wechatcell_timeback"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/cell_hantu_image_logo_imageview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/cnm"
+            />
+
+<!--
+
+        <hebiao.hantu.BubbleImageView
+            android:id="@+id/cell_hantu_image_picture_imageview"
+            android:layout_width="100dp"
+            android:layout_height="178dp"
+            android:layout_toRightOf="@id/cell_hantu_image_logo_imageview"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/wechatimg"
+            app:arrowWidth="8dp"
+            app:angle="4dp"
+            app:arrowHeight="10dp"
+            app:arrowPosition="14dp"
+            app:arrowLocation="left"
+            app:bubbleColor="#7EC0EE"
+            />
+            -->
+        <RelativeLayout
+            android:id="@+id/cell_hantu_image_relativelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cell_hantu_image_logo_imageview"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/wechatbaimg"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            >
+            <hebiao.hantu.BubbleImageView
+                android:id="@+id/cell_hantu_image_picture_imageview"
+                android:layout_width="100dp"
+                android:layout_height="178dp"
+                android:src="@mipmap/wechatimg"
+                app:arrowWidth="8dp"
+                app:angle="4dp"
+                app:arrowHeight="10dp"
+                app:arrowPosition="14dp"
+                app:arrowLocation="left"
+                app:bubbleColor="#7EC0EE"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

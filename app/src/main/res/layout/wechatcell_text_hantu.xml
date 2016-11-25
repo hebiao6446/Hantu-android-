@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    >
+
+    <RelativeLayout
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:id="@+id/cell_hantu_text_time_relativelayout"
+        >
+        <TextView
+            android:id="@+id/cell_hantu_text_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="11:11"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#fff"
+            android:background="@drawable/wechatbac1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/cell_hantu_text_logo_imageview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/cnm"
+            />
+
+        <RelativeLayout
+            android:id="@+id/cell_hantu_text_context_relativelayout"
+            android:layout_toRightOf="@id/cell_hantu_text_logo_imageview"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:background="@drawable/wechatbac1"
+            android:layout_marginRight="60dp"
+            >
+            <TextView
+                android:id="@+id/cell_hantu_text_context_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间时间"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:textColor="#444444"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
